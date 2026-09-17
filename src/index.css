@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0F172A;
+    color: #F1F5F9;
+  }
+  
+  h1, h2, h3, .font-comic {
+    font-family: 'Bangers', cursive, 'Impact', sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  .font-bento-title {
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono-code {
+    font-family: 'Space Grotesk', ui-monospace, SFMono-Regular, monospace;
+  }
+}
+
+/* Bento Tile Backgrounds & Gradients */
+.bento-card {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 1.5rem; /* rounded-3xl */
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: #FACC15;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(250, 204, 21, 0.08);
+}
+
+.bento-card-dark {
+  background-color: #171717;
+  border: 1px solid #262626;
+  border-radius: 1.5rem;
+}
+
+.bento-card-accent {
+  background-color: #FACC15;
+  color: #000000;
+  border-radius: 1.5rem;
+}
+
+/* Comic Halftone Pattern for subtle texture */
+.bg-halftone {
+  background-color: #0F172A;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.bg-halftone-yellow {
+  background-color: #facc15;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+/* 3D Slab Reflection effect */
+.cgc-slab {
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.02) 40%, rgba(255,255,255,0.1) 100%);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 15px rgba(250, 204, 21, 0.15);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FACC15;
+}

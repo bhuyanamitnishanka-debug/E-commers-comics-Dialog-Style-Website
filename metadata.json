@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Comics - Ultimate Comic E-Commerce & Collector Hub",
+  "description": "Premium comic bookstore, collector vault, pull list subscription engine, interactive reader, live auctions, and grading hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
